@@ -66,10 +66,12 @@ public class Lesson_4 {
         boolean con_1 = name1.contains("a");
         boolean con_2 = name2.contains("a");
         boolean con_3 = name3.contains("a");
+        boolean con_4 = name3.contains("a");
 
         System.out.println(con_1);
         System.out.println(con_2);
         System.out.println(con_3);
+        System.out.println(con_4);
 
 
     }
