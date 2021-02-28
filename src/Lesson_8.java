@@ -1,63 +1,75 @@
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 public class Lesson_8 {
-    /*public static void main(String[] args) {
-        int[] dizi = new int[4];
-
-        //birinci elemana deger atayalım
-        dizi[0] = 3;
-        //ikinci elemana deger atayalım
-        dizi[1] = 4;
-        //ucuncu elemana deger atayalım
-        dizi[2] = 9;
-        //dorduncu elemana deger atayalım
-        dizi[3] = 10;
-        System.out.println("dizinin 1.elemanın degeri " + dizi[0]);
-        System.out.println("dizinin 2.elemanın degeri " + dizi[1]);
-        System.out.println("dizinin 3.elemanın degeri " + dizi[2]);
-        System.out.println("dizinin 4.elemanın degeri " + dizi[3]);
-    }
-
     public static void main(String[] args) {
-        String[] dizi2 = new String[4];
-        dizi2[0] = "birinci eleman";
-        dizi2[1] = "ikinci eleman";
-        dizi2[2] = "uçuncu eleman";
-        dizi2[3] = "dördöncu eleman";
+      /*int[] int_array = new int[4];
 
-        System.out.println("birinci eleman  " + dizi2[0]);
-        System.out.println("ikinci eleman  " + dizi2[1]);
-        System.out.println("ucuncu eleman  " + dizi2[2]);
-        System.out.println("dörduncu eleman  " + dizi2[3]);
+        int_array[0] = 6;
+        int_array[1] = 7;
+        int_array[2] = 8;
+        int_array[3] = 9;
 
+        System.out.println("Birinci eleman: " + int_array[0]);
+        System.out.println("ikinci eleman: " + int_array[1]);
+        System.out.println("ucuncu eleman: " + int_array[2]);
+        System.out.println("dörduncu eleman: " + int_array[3]);
 
-    }
+        int[] int_array={5,6,7,8};
 
-    public static void main(String[] args) {
-        String[] dizi2 = {"bir", "iki", "uc", "dört"};
-        int dizi2_uzunluk = dizi2.length;
-        System.out.println(dizi2_uzunluk);
+        System.out.println( "Arrayın uzunlugu: "+int_array.length);
 
-        System.out.println("bir " + dizi2[0]);
-        System.out.println("iki " + dizi2[1]);
-        System.out.println("uc " + dizi2[2]);
-        System.out.println("dort  " + dizi2[3]);
-    }
+        int[] int_array2=new int[]{1,2,3,4,5};
 
-    public static void main(String[] args) {
-        String[] dizi2 = {"bir", "iki", "uc", "dört"};
-        for (int i = 0; i < dizi2.length; i++) {
-            System.out.println((i + 1) + ".ci eleman: " + dizi2[i]);
+        System.out.println( "Arrayın uzunlugu: "+int_array2.length);
+
+        for(int i=0; i< int_array2.length; i++){
+            //System.out.println((i+1)+".ci eleman "+int_array[i]);
+            System.out.println((i+1)+".ci eleman "+int_array2[i]);*/
+
+       /* String[] birinci_array={"a","b","c","d"};
+        String[] ikinci_array=new String[4];
+
+        ikinci_array=birinci_array.clone();
+
+        for(int i=0; i<ikinci_array.length; i++ ){
+            System.out.println((i)+".nci eleman: "+ikinci_array[i]);
+
+            boolean array_aynı_mı= birinci_array.equals(ikinci_array);
+            System.out.println("array_aynı_mı: "+array_aynı_mı);
+
+        int[] int_array=new int[]{5,6,7,8};
+
+        int[] yeni_array=new int[5];
+
+        for(int i=0; i<int_array.length; i++){
+            yeni_array[i]=int_array[i];
         }
-        public static void main (String[]args){
-            String[] birinci_array = {"bir", "iki", "uc", "dört"};
-            String[] ikinci_array = new String[4];
-
-            ikinci_array = birinci_array.clone();
-
-            for (int i = 0; i < ikinci_array.length; i++) {
-                System.out.println((i + 1) + ".ci eleman:" + ikinci_array[i]);
-
-
-            }
+        yeni_array[4]=10;
+        for(int i=0; i< yeni_array.length; i++){
+            System.out.println(i+".nci eleman:"+ yeni_array[i]);
         }
-    }*/
+        int[] arrayone={1,2,5,11,45,65,3,2,87,8};
+
+        Arrays.sort(arrayone);
+
+        for(int i=0; i< arrayone.length; i++){
+
+            System.out.print(arrayone[i]+"--");
+
+        int[] my_array={1789,2035,1899,1456,2013,1458,2458,1254,1472,2365};
+
+        int sum= IntStream.of(my_array).sum();
+        System.out.println(sum);
+
+        int[] my_array={1789,2035,1899,1456,2013,1458,2458,1254,1472,2365};
+
+       double toplam=IntStream.of(my_array).sum();
+       double ort=toplam / my_array.length;
+       System.out.println("dizinin ortalaması: "+ort);*/
+    }
+
+
+
 }
+
